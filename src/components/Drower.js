@@ -58,7 +58,7 @@ function Drower() {
     var v={
       labels:key  
     }
-    console.log(`selected  ${value}`);
+    
     setDatas((e)=>{
     return  {...e,'schema':[...e.schema,value]}
     })
@@ -69,15 +69,15 @@ function Drower() {
   const handleChange1 = (value) => {
     setVal1(false)
 
-    console.log(`selected1  ${value}`);
-    console.log(data);
+   
   };
   const onchange =(e)=>{
-    console.log('values',e.target.value);
+   
     setDatas({'segment_name':e.target.value,'schema':[]})
   }
 
   const submitdata=()=>{
+    alert(`${datas.segment_name},${Object.values(datas.schema)}`)
     if(datas?.segment_name !=""){
       if(datas?.schema !=''){
       axios.post('https://webhook.site/ce99e955-8b48-4280-bf7f-bb3af2bfe38b',datas)
