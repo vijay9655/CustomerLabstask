@@ -1,4 +1,5 @@
 .App {
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -12,7 +13,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.ant-drawer-header{
+  background-color: #2f9ecb;
+  color: white;
+}
+.anticon svg{
+  color: white;
 
+}
+.ant-drawer-title{
+  color: rgb(255, 255, 255) !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
